@@ -17,6 +17,7 @@ h1 a {
 
 .content {
     margin-left: 40px;
+    font-family: 'Lato';
 }
 
 .date {
@@ -36,6 +37,7 @@ h1 a {
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
     float: right;
+    display: inline-block;
     font-size: 26pt;
     margin-right: 20px;
 }
