@@ -1,3 +1,2 @@
 # django_blog_project
-# created using the Django Girls tutorial
-# deployed on heroku at chatterchatter.herokuapp.com
+# created using the Django Girls tutorial and deployed on heroku at chatterchatter.herokuapp.com
