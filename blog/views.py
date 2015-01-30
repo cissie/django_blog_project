@@ -4,7 +4,7 @@ from .models import Post
 from .forms import PostForm
 
 def post_list(request):
-    posts = Post.objects.filter(published_date__isnull=False).order_by('-published_date')
+    posts = Post.objects.filter(published_date__isnull=False).order_by('published_date').reverse()
     return render(request, 'blog/post_list.html', {'posts': posts})
 
 def post_detail(request, pk):
