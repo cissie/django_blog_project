@@ -1,2 +1,2 @@
-# django_blog_project
+# Blog built in Django
 
