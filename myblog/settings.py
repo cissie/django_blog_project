@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS
 import dj_database_url
 import os
 
@@ -39,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'endless_pagination'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -97,6 +99,10 @@ DEBUG = False
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
+)
+
+TEMPLATE_CONTEXT_PROCESSORS += (
+    'django.core.context_processors.request',
 )
 
 LOGIN_REDIRECT_URL = '/'
